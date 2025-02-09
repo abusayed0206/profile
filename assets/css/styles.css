@@ -1485,6 +1485,13 @@ img {
   border-radius: 0.5rem;
 }
 
+/* Media Query for smaller screens (single image per row) */
+@media (max-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
 .gallery__title {
   font-size: 1.2rem; /* Title size */
   font-weight: 600; /* Slightly bold */
